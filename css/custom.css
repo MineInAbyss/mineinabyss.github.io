@@ -428,3 +428,87 @@ pre > code {
     padding: 1rem 1.5rem;
     white-space: pre;
 }
+
+/*Coloured social media*/
+.discord {
+    background-color: #7289DA !important;
+    border-color: #7289DA !important;
+}
+
+.discord:hover {
+    background-color: #677cc7 !important;
+    border-color: #677cc7 !important;
+}
+
+.github {
+    background-color: #202428 !important;
+    border-color: #202428 !important;
+}
+
+.github:hover {
+    background-color: #484F56 !important;
+    border-color: #484F56 !important;
+}
+
+.youtube {
+    background-color: #D61D17 !important;
+    border-color: #D61D17 !important;
+}
+
+.youtube:hover {
+    background-color: #c4302b !important;
+    border-color: #c4302b !important;
+}
+
+.twitter {
+    background-color: #4BB2F2 !important;
+    border-color: #4BB2F2 !important;
+}
+
+.twitter:hover {
+    background-color: #49a9e7 !important;
+    border-color: #49a9e7 !important;
+}
+
+/*Top image*/
+.top-img {
+ /* The image used */
+ background-image: url("../images/mia_render.png");
+
+ /* Set a specific height */
+ height: 100vh;
+ width: 100%;
+ display: table;
+
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+}
+
+h5, .center {
+    text-align: center;
+}
+.title {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.title h2{
+    font-size: 75px !important;
+}
+
+.title-button a {
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: all .2s ease-in;
+}
+
+.title-button a:hover{
+    color: #d4d4d4;
+}
