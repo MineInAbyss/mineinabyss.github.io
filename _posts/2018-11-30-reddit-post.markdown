@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "November 2018 Update"
+date:   2018-11-30
+tags: update highlights
+color: rgb(133, 141, 255)
+cover: '../assets/images/mia_render.png'
+subtitle: 'Progress update'
+---
+
+> Original Reddit post can be found [here](https://www.reddit.com/r/MadeInAbyss/comments/a1xlwy/mine_in_abyss_one_year_progress_update/?st=jp4ngmlz&sh=8bffa722)
+
+Hello Everyone! We are making this post to celebrate the one-year anniversary of the Mine In Abyss (a Minecraft recreation of Made in Abyss) discord server! Almost a year has passed since our last post (oops), but in this time, progress has not stopped. Before we look at the progress, we want to mention that, although we’ve grown a lot, we still need as much help as we can get. If you are at all interested in helping, or just want to hop on and look around, consider joining our [Discord Server](https://discord.gg/jDd7x8V). At the bottom of the page are some of the things we are looking for help with.
+
+Without further ado, let’s take a look at what has been done!
+
+## Build Progress
+
+Have a look through [this big album](https://imgur.com/a/gRzMdKM), it has lots and lots of fancy cinematic photos of different layers.
+
+Now, for a list of what's been built:
+
+* Orth has been entirely remodeled. Almost half of Orth has been completed, including areas such as the industrial sector and the slums.
+* Layer one and two have been completely redone. They are now each closer to 1:1 scale.
+* Additional landmarks from the anime/manga have been added, including the Orphanage, Seeker Camp, Nanachi’s Hut, Delver Guild HQ, and the Wharf (look in the album to see them).
+* Layer four has been added, including an expansive cave system.
+* There have also been many more small touches everywhere. Big thank you to all our builders!
+
+## Gameplay
+Here's what we have done in terms of code and gameplay:
+
+* We have created a (really cool) [skybox](https://imgur.com/a/mY56k6X) to deal with far away chunks not being loaded, as well as to deal with the void. The skybox allows sections above and below the player to be visible all at once!. It adds some much needed sense of depth.
+* More relics have been [added](https://imgur.com/a/ILk6g6v). During the previous post relics were in their infancy. We are currently putting the finishing touches on a system that allows the discovery of relics in fitting, yet non-deterministic locations throughout the abyss.
+* There are a number of ruins throughout the abyss (although some are being re-added due to the layer changes). These ruins will be hotspots for relics in the near future.
+* We've started work on custom mobs, like these [adorable things](https://imgur.com/a/VqPc1Wa).
+* We are working on a stamina and climbing system plugin to make traversing the abyss more feasible.
+* Water has been made a lot more dangerous, especially [waterfalls](https://imgur.com/EjQa4Jk).
+* We have moved to a dedicated host. Goodbye lag! Also, a proper IP to go along with it, goodbye random numbers!
+* All of our code is available on [GitHub](https://github.com/mineinabyss)!
+
+## Social media
+Posting once a year seems to be slightly inefficient, so we have decided to start a [YouTube channel](https://www.youtube.com/channel/UCcN3FYcYDX5fk-sJX8yG3ig) and [Twitter account](https://twitter.com/MineAbyss). A few day ago [Tsukushi himself tweeted about us](https://twitter.com/tukushiA/status/1067036815410917381)!
+
+ While our twitter and youtube are both fairly empty at the moment, we will be updating them frequently. We hope to be posting images and updates on the Twitter multiple times a week, and videos every once in a while. We are always looking for more content to post, so if you hop on the server and shoot a video or take a few pics we would be happy to post them with credit. As always, you can join us in our [Discord Server](https://discord.gg/jDd7x8V), which leads into the next section...
+
+## Come help us!
+To end things off, we need your help! Even if you aren’t a good builder, there are many other things you can do to help out. Here are a few things we are looking for help with:
+
+* **Builders** - You don’t need to be crazy good, in fact you will almost certainly get better the more you help out, so hop on and show us what you’ve got!
+* **Developers**. - We work mostly with Java, specifically with Spigot. There is a very large variety of things that need to be completed, so even if you aren’t familiar with Spigot, but know a bit of Java, it could be possible to help. There aren’t many of us, and since things are currently very modular, you don’t need to learn everything that’s been coded so far. Besides Java we also have a python script we use to automatically generate skyboxes for the abyss.
+* **Textures artists** - We are working on creating a resourcepack. Not much has been done so far, mainly because we don’t have many people working on this specifically. For the most part we are keeping it fairly faithful to standard minecraft textures.
+* **3D modellers** - If you are familiar with making models in Minecraft, we could definitely use a hand for creating relics and creatures. If you’re not, there are a couple free options for modelling software that you could try out, and they are not too hard to learn.
+* **Design ideas** - Just hop on, play a bit and share your opinion on what you think needs to be added. We don’t have a complete idea of what the game will look like, so you could just help think of things.
+* **Testers/Lurkers** - If you don’t want to suggest anything, you can still just pop in. The more the merrier!
+
+Thanks for reading
+
+\- The Mine in Abyss Team
+
+[Previous Post](https://www.reddit.com/r/MadeInAbyss/comments/7ru0kb/mine_in_abyss_made_in_abyss_minecraft_recreation/)

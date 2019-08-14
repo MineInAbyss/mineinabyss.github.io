@@ -1,120 +1,56 @@
-<!DOCTYPE html>
-<html id="top" lang="en">
+---
+layout: default
+title: Mine in Abyss
+page-title: Mine in Abyss
+home-title:
+description:
+---
 <head>
-    <meta charset="UTF-8">
-    <title>Mine In Abyss</title>
-
-    <!--Icon-->
-    <link href="images/icon.png" rel="icon">
-
-    <!--Raleway font-->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-    <!--Skeleton responsive CSS boilerplate-->
-    <link href="Skeleton-2.0.4/css/skeleton.css" rel="stylesheet">
-    <link href="Skeleton-2.0.4/css/normalize.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-
-    <!--Animate css, allows for simple animations on objects-->
-    <link href="css/animate.css" rel="stylesheet">
-
     <!--Font-awesome, a font for icons-->
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
-
-    <!--JQuery-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-
-    <!--Code prettify from Google-->
-    <script src="js/run_prettify.js"></script>
-
-    <!--Navbar from the Skeleton page-->
-    <script src="js/nav.js"></script>
-
-    <!--Navbar select while scrolling from http://codetheory.in/change-active-state-links-sticky-navigation-scroll/-->
-    <script src="js/navSelector.js"></script>
-
-    <!--Site JavaScript code-->
-    <script src="js/site.js"></script>
 </head>
-<body>
-<div class="top-img">
-    <div class="title">
-        <h2 class="animated fadeInUp">Mine In Abyss</h2>
-        <div class="title-button animated fadeInUp delay-05s">
-            <a class="" href="#about"><i class="fas fa-chevron-down"></i></a>
-        </div>
-    </div>
-</div>
-<div class="container" id="home">
-    <section class="docs-section">
-        <h5 class="docs-header" id="about">About</h5>
-        <p>Build Server ip: <code>mineinabyss.ga</code> Help out with the project. Build on the creative world, then
-            apply on the discord server.</p>
-        <p>Sruvival Server ip: <code>survive.mineinabyss.ga</code> Play and build with others!</p>
-        <div class="center animated fadeInUp delay-05s">
-            <a class="button button-primary discord" href="https://discord.gg/QXPCk2y">Discord <i
-                    class="fab fa-discord"></i></a>
-            <a class="button button-primary github" href="https://github.com/mineinabyss">Github <i
-                    class="fab fa-github"></i></a>
-            <a class="button button-primary youtube" href="https://www.youtube.com/channel/UCcN3FYcYDX5fk-sJX8yG3ig">Youtube
-                <i class="fab fa-youtube"></i></a>
-            <a class="button button-primary twitter" href="https://twitter.com/mineabyss?lang=en">Twitter <i
-                    class="fab fa-twitter"></i></a>
-        </div>
-    </section>
+<main>
+    {% if paginator.page == 1 %}
+        {% include homepage-title.html %}
 
-    <div class="navbar-spacer"></div>
-    <nav class="navbar fadeInDown animated">
-        <div class="container">
-            <ul class="container navbar-list" id="top-menu">
-                <li class="navbar-item"><a class="navbar-link" href="#top">Home</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="#highlights">Highlights</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="webmap/map.html">Webmap</a></li>
-                <!--<li class="navbar-item">
-                    <a class="navbar-link" data-popover="#moreNavPopover" href="#">More</a>
-                    <div class="popover" id="moreNavPopover">
-                        <ul class="popover-list">
-                            <li class="popover-item">
-                                <a class="popover-link" href="">Item 1</a>
-                            </li>
-                            <li class="popover-item">
-                                <a class="popover-link" href="">Item 2</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>-->
-            </ul>
+        <ul class="ex-list">
+            <li class="fadeInUp animated social-buttons">
+                <a class="wow fadeInUp button discord" data-wow-delay="0.2s" href="https://discord.gg/QXPCk2y">
+                    <b class="content-desktop">Discord </b><i class="fab fa-discord"></i></a>
+                <a class="wow fadeInUp button github" data-wow-delay="0.4s" href="https://github.com/mineinabyss">
+                    <b class="content-desktop">Github </b><i class="fab fa-github"></i></a>
+                <a class="wow fadeInUp button youtube" data-wow-delay="0.6s"
+                   href="https://www.youtube.com/channel/UCcN3FYcYDX5fk-sJX8yG3ig">
+                    <b class="content-desktop">Youtube </b><i class="fab fa-youtube"></i></a>
+                <a class="wow fadeInUp button twitter" data-wow-delay="0.8s" href="https://twitter.com/mineabyss?lang=en">
+                    <b class="content-desktop">Twitter </b><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="fadeInUp animated markdown-body">
+                <h1>General info:</h1>
+                <p>Check us out on social media with the buttons above.</p>
+                <p style="text-align: left">Build Server ip: <code>build.mineinabyss.ga</code> Help out with the project. Build on the creative world, then apply on the discord server.</p>
+                <p style="text-align: left">Survival Server ip: <code>survive.mineinabyss.ga</code> Play and build with others!</p>
+            </li>
+        </ul>
+    {% else %}
+        <div class="wow fadeIn top" data-wow-duration="3.5s" >
+        <span class="wow fadeInUp" data-wow-delay="0.2s">{{ page.page-title }}</span>
+        <span class="wow fadeInUp" data-wow-delay="0.4s">Post gallery</span>
         </div>
-    </nav>
 
-    <section class="docs-section" id="highlights">
-        <h5 class="docs-header">Highlights</h5>
-        <div class="img-section">
-            <a href="https://www.reddit.com/r/MadeInAbyss/comments/a1xlwy/mine_in_abyss_one_year_progress_update/?st=jp4ngmlz&sh=8bffa722"><img
-                    src="images/mia_render.png"></a>
-            <p><strong>Last reddit post:</strong> One Year Progress Update</p>
-        </div>
-    </section>
+    {% endif %}
+    <ul class="post-list">
+        {% if paginator.page == 1 %}
+        <li class="fadeInUp animated markdown-body">
+            <h1>Post gallery:</h1>
+            <p>Have a look at what we're up to. You can also sort posts by <a href="tags.html">Tags</a> or see a <a href="timeline.html">Timeline</a> view.</p>
+        </li>
+        {% endif %}
 
-    <section class="docs-section" id="gallery">
-        <h5 class="docs-header">Gallery</h5>
-        <p>Pictures! Fun!</p>
-        <div class="photos">
-            <div class="img-section">
-                <a href=""><img
-                        src="images/mia_render.png"></a>
-                <p><strong>Dual column cards:</strong> there's one here!</p>
-            </div>
+        {% include posts_paginator.html %}
+    </ul>
+    {% include pageNav.html %}
 
-            <div class="img-section">
-                <a href=""><img
-                        src="images/mia_render.png"></a>
-                <p><strong>And another one:</strong> woah</p>
-            </div>
-        </div>
-    </section>
-</div>
-</body>
-</html>
+</main>
+{% include footer.html %}
