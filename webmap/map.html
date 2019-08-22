@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Mine In Abyss Web Map</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<script src="js/three.min.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script>
+    let camera, scene, renderer, controls;
+
+    init();
+    animate();
+
+    function init() {
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.01, 20);
+        controls = new THREE.OrbitControls(camera);
+
+        geometry = new THREE.CylinderGeometry(5, 5, 100, 30);
+        // abyssImage = new Image();
+        // abyssImage.src = "textures/Abyss.jpg";
+
+        // abyssImage.addEventListener("load", function() {
+        //     console.log("image has loaded");
+        //     console.log(abyssImage.naturalHeight)
+        // });
+
+        texture = new THREE.TextureLoader().load("textures/Abyss.png");
+
+        //flip image
+        texture.wrapS = THREE.RepeatWrapping;
+        texture.repeat.x = -1;
+        material = new THREE.MeshBasicMaterial({color: 0xffffff, map: texture, side: THREE.BackSide});
+
+        const count = 4;
+        const radius = 2;
+
+        const mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
+
+        renderer = new THREE.WebGLRenderer({antialias: true});
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        controls.minPolarAngle = Math.PI / 2; // radians
+        controls.maxPolarAngle = Math.PI / 2; // radians
+        controls.enableZoom = false;
+        controls.enablePan = false;
+
+        camera.lookAt(new THREE.Vector3(0, 0, 0));
+        controls.target.y = 45;
+        camera.position.set(0, 45, 5);
+        controls.coupleCenters = true;
+        controls.rotateSpeed = -0.25;
+        controls.update();
+
+        window.addEventListener('wheel', onMouseWheel, false);
+    }
+
+    function onMouseWheel(event) {
+        camera.position.y -= event.deltaY * 0.0075;
+        controls.target.y -= event.deltaY * 0.0075;
+        // prevent scrolling beyond a min/max value
+        // camera.position.clampScalar(0, 10);
+        controls.update();
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+    }
+</script>
+</body>
+</html>
