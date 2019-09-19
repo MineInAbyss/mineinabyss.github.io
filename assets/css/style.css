@@ -99,10 +99,10 @@ html, body, ul, li, div, header, nav, main, footer {
 
 html {
     background-image: url(/assets/bak.svg);
-    /*background-size: 100%;*/
+    background-repeat: no-repeat;
     background-position: center;
-    /*background-color: white;*/
-    font-family: Ubuntu;
+    background-position-y: 600px;
+    font-family: Ubuntu, sans-serif;
 }
 
 /*html::-webkit-scrollbar{
