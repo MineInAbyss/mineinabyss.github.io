@@ -16,8 +16,8 @@
 title: Mine in Abyss
 description: >- # this means to ignore newlines until "baseurl:"
   Mine in Abyss is a recreation of Made in Abyss in Minecraft.
-  We currently run build and survival servers at build.mineinabyss.ga
-  and survive.mineinabyss.ga respectively.
+  We currently run build and survival servers at build.mineinabyss.com
+  and survive.mineinabyss.com respectively.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
