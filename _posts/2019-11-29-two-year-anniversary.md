@@ -13,12 +13,12 @@ Hello there! This is an update post on the Mine in Abyss project, a recreation o
 
 | [Website](https://mineinabyss.com) | [Discord Server](https://discord.gg/2aVhDEq) | [Big album of images](https://imgur.com/a/XvWIwOM) | Our social media is available on the site! |
 
-#Introduction
+# Introduction
 To start things off, we got a proper survival server setup! You can check it out at `survive.mineinabyss.com` (as well as `build.mineinabyss.com` for build). The server has been around for several months and has a small but wonderful playerbase. It isn’t meant to replace the adventure server, but it’s there for you to have something to play in the meantime. Both servers run on Minecraft 1.13.2.
 
 Last thing before we get into the interesting stuff, we got a site over at [mineinabyss.com](https://mineinabyss.com). You can also chat and get notified of new stuff on our Discord server [here](https://discord.gg/2aVhDEq).
 
-#Major news
+# Major news
 #### Barebones gamemode
 We started development on a roguelike gamemode (more info below).
 
@@ -32,7 +32,7 @@ A couple months back, we added [custom mobs](https://imgur.com/unT8fPB) to the s
 
 There’s tons of other cool stuff, so let’s get into the details.
 
-#Build Progress
+# Build Progress
 
 Once gain, take a look at the [big album](https://imgur.com/a/XvWIwOM)!
 
@@ -46,7 +46,7 @@ Here’s what we’ve built in the past year:
 * A complete revamp of layer 2, bringing it to a full 1:1 scale
 * A new district has been completed, with another in progress 
 
-#Gameplay
+# Gameplay
 Here's what we have done in terms of code and gameplay:
 
 #### Roguelike gamemode
@@ -68,7 +68,7 @@ The custom mobs plugin is now known as Mobzy and it’s been split into an API f
 * Speaking of which, all of our code is available on [GitHub](https://github.com/mineinabyss).
 * ~~Honorable mention goes to to [Edible Sand](https://www.youtube.com/watch?v=MLxkUNFLCHk) (Naatchi from the Discord is to blame for this)~~
 
-#Come help us!
+# Come help us!
 The project relies on people volunteering their time and efforts. We’re trying to make it easier to get started with helping out. Below is a quick list of what we need the most:
 
 * **Developers** - This is currently the most lacking position. We create plugins with Spigot, which uses Java. If you’re at all interested, contact us in #plugin-dev on the Discord server, and we’ll find you something to do, or resources to learn. If you’ve been meaning to learn programming, there’s nothing that works better than a project you’re passionate about!
