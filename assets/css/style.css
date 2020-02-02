@@ -47,6 +47,12 @@
     }
 }
 
+@media screen and (min-width: 800px) {
+    .social-buttons .button {
+        width: 125px;
+    }
+}
+
 /*Coloured social media*/
 .discord {
     background-color: #7289DA !important;
@@ -86,6 +92,16 @@
 .twitter:hover {
     background-color: #49a9e7 !important;
     border-color: #49a9e7 !important;
+}
+
+.patreon {
+    background-color: #f96854 !important;
+    border-color: #f96854 !important;
+}
+
+.patreon:hover {
+    background-color: #e76551 !important;
+    border-color: #e76551 !important;
 }
 
 .fab {
