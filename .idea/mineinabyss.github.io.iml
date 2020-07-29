@@ -12,5 +12,6 @@
     <orderEntry type="library" name="three" level="application" />
     <orderEntry type="library" name="PointerLockControls" level="application" />
     <orderEntry type="library" name="SVGLoader" level="application" />
+    <orderEntry type="library" name="lazysizes" level="application" />
   </component>
 </module>

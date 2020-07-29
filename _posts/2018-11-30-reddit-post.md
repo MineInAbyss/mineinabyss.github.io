@@ -4,7 +4,7 @@ title:  "November 2018 Update"
 date:   2018-11-30
 tags: update highlights
 color: rgb(133, 141, 255)
-cover: '../assets/images/mia_render.jpg'
+cover: '../assets/images/render/mia_render.jpg'
 subtitle: 'Progress update'
 ---
 
