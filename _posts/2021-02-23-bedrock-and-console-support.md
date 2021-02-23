@@ -9,7 +9,7 @@ subtitle: 'It works, kind of'
 ---
 
 Recently, we have been testing out support for other platforms than the **Java Edition** of Minecraft.  
-This means that people can now join from **Bedrock/Xbox/Playstation//Switch/Pocket Edition**
+This means that people can now join from **Bedrock/Xbox/Playstation//Switch/Pocket Edition**.  
 This is only basic support, and most platforms other than PC will be very laggy.  
 Features like the *climbing system* & the *custom mobs*, will be semi-functional or just broken.  
 We are trying to find a solution for this, but it will take time as we are a small team and other things take priority at the moment.  
