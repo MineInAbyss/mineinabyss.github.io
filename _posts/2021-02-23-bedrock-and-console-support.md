@@ -8,10 +8,10 @@ tags: update
 subtitle: 'It works, kind of'
 ---
 
-We have recently been experimenting with support for other platforms than the **Java Edition** to join the server.  
-This means that people can now join from **Xbox/Playstation/Pocket Edition/Bedrock Edition** and even the **Switch** version.  
+Recently, we have been testing out support for other platforms than the **Java Edition** of Minecraft.  
+This means that people can now join from **Bedrock/Xbox/Playstation//Switch/Pocket Edition**
 This is only basic support, and most platforms other than PC will be very laggy.  
-Other mechanics and assets, like the *climbing system* & the *custom mobs*, will be semi-functional or just broken.  
+Features like the *climbing system* & the *custom mobs*, will be semi-functional or just broken.  
 We are trying to find a solution for this, but it will take time as we are a small team and other things take priority at the moment.  
 In essence, this is to allow people on other platforms to explore the map of the Abyss we have worked hard to make.  
 
