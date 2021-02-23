@@ -15,7 +15,8 @@ Features like the *climbing system* & the *custom mobs*, will be semi-functional
 We are trying to find a solution for this, but it will take time as we are a small team and other things take priority at the moment.  
 In essence, this is to allow people on other platforms to explore the map of the Abyss we have worked hard to make.  
 
-Because of this, we are thinking of limiting these platforms from joining the **Survival Server**, as it is not going to work smoothly.  
+Because of this, we are thinking of limiting these platforms from joining the **Survival Server**, as it is not going to work smoothly.
+Though this is not enforced at time of writing this.  
 This means you will be able to join the **Build Server**, fly around and explore the map, but not join Java players in survival mode.  
 In order to join, input the information below:  
 **Server-IP:** build.mineinabyss.com  (if this does not work, try joining survive.mineinabyss.com)  
