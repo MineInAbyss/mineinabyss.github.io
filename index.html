@@ -6,14 +6,22 @@ home-title:
 description:
 ---
 <head>
+    <link rel="stylesheet" href="navbar/css/navbar.css">
     <!--Font-awesome, a font for icons-->
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
+    <link rel="stylesheet" href="navbar/css/navbar.css">
 </head>
 <main>
+    <ul id="nav-bar">
+        <li><a  class="active" href="">Home</a></li>
+        <li><a href="">Downloads</a></li>
+        <li><a href="">Community</a></li>
+        <li><a href="">Support</a></li>
+    </ul>
+
     {% if paginator.page == 1 %}
         {% include homepage-title.html %}
-
         <ul class="ex-list">
             <li class="fadeInUp animated social-buttons">
                 {% include buttons/social.html name="discord" delay="0.2s" href="https://discord.gg/QXPCk2y" %}
