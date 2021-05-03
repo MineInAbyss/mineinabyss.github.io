@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{% include post-header.html %}
+{% include boot.html %}
+{% include post-title.html %}
+<head>
+    <link rel="stylesheet" type="text/css" href="gallery/css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="gallery/css/modal.css">
+    <script type="text/javascript" src="gallery/imageArray.js"></script>
+    <script type="text/javascript" src="gallery/js/arrayChecker.js"></script>
+    <script type="text/javascript" src="gallery/js/gallery.js"></script>
+    <script type="text/javascript" src="gallery/js/lazyLoader.js"></script>
+    <script type="text/javascript" src="gallery/js/modal.js"></script>
+</head>
+<main>
+    <div class="fadeInUp animated markdown-body">
+        {{ content }}
+        <h1>Community Images</h1>
+        <p>Check out some images submitted by our community.</p>
+        <a class="fadeInUp animated button" href="gallery/discord.html">Click here to suggest a picture!</a>
+    </div>
+    <div class="gallery-border">
+        <div class="row">
+            <div class="column">
+                <script type="text/javascript">insertImages()</script>
+            </div>
+            <div class="column">
+                <script type="text/javascript">insertImages()</script>
+            </div>
+            <div class="column">
+                <script type="text/javascript">insertImages()</script>
+            </div>
+        </div>
+    </div>
+    <div id="modal">
+        <img src="gallery/img/test.PNG" id="modal-image">
+        <span id="close-button" onclick="closeModal()">&times;</span>
+    </div>
+</main>
+{% include footer.html %}
