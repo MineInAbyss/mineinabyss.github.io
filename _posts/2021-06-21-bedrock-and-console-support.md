@@ -5,7 +5,7 @@ date: 2021-02-23
 author: Boy
 color: rgb(0,153,0)
 tags: update
-subtitle: ''
+subtitle: 'Out of commission...'
 ---
 Due to the Bedrock-edition updating to version 1.17, we are currently unable to add support for cross-play until we update the server.   
 When we do, we will make a new post here, as well as announcements on our social media platforms.   
