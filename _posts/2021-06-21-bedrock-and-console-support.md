@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bedrock and Console support'
-date: 2021-02-23
+date: 2021-06-21
 author: Boy
 color: rgb(0,153,0)
 tags: update
