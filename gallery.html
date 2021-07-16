@@ -8,10 +8,10 @@ layout: default
     <link rel="stylesheet" type="text/css" href="gallery/css/gallery.css">
     <link rel="stylesheet" type="text/css" href="gallery/css/modal.css">
     <script type="text/javascript" src="gallery/imageArray.js"></script>
-    <script type="text/javascript" src="gallery/js/arrayChecker.js"></script>
     <script type="text/javascript" src="gallery/js/gallery.js"></script>
     <script type="text/javascript" src="gallery/js/lazyLoader.js"></script>
     <script type="text/javascript" src="gallery/js/modal.js"></script>
+    <title></title>
 </head>
 <main>
     <div class="fadeInUp animated markdown-body">
@@ -20,21 +20,13 @@ layout: default
         <p>Check out some images submitted by our community.</p>
         <a class="fadeInUp animated button" href="gallery/discord.html">Click here to suggest a picture!</a>
     </div>
-    <div class="gallery-border">
-        <div class="row">
-            <div class="column">
-                <script type="text/javascript">insertImages()</script>
-            </div>
-            <div class="column">
-                <script type="text/javascript">insertImages()</script>
-            </div>
-            <div class="column">
-                <script type="text/javascript">insertImages()</script>
-            </div>
+    <div id="gallery-border">
+        <div id="img-container">
+            <script type="text/javascript">insertImages()</script>
         </div>
     </div>
     <div id="modal">
-        <img src="gallery/img/test.PNG" id="modal-image">
+        <img src="gallery/img/test.PNG" id="modal-image" alt="">
         <span id="close-button" onclick="closeModal()">&times;</span>
     </div>
 </main>

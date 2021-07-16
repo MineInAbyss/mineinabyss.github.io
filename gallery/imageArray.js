@@ -1,5 +1,4 @@
-let images;
-images = [
+const images = [
     'https://cdn.discordapp.com/attachments/385991158184280075/797649802723852339/unknown.png',
     'https://cdn.discordapp.com/attachments/385991158184280075/797649827810639912/unknown.png',
     'https://cdn.discordapp.com/attachments/385991158184280075/797649844582744124/unknown.png',
