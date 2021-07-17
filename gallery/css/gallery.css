@@ -4,7 +4,7 @@
 
 #img-container {
     line-height: 0;
-    column-count: 3;
+    column-count: 5;
     column-gap: 5px;
 }
 
@@ -12,6 +12,13 @@
     width: 100% !important;
     height: auto; !important;
     margin-bottom: 5px;
+
+}
+
+#img-container img:hover {
+    cursor: pointer;
+    color: #c0c0c0;
+    opacity: 0.85;
 }
 
 @media (max-width:400px) {
@@ -23,11 +30,17 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 450px) { /* this covers most wider mobile devices.*/
     #gallery-border {
         padding: 0;
     }
     #img-container {
         column-count: 2;
+    }
+}
+
+@media (max-width: 1200px) {
+    #img-container {
+        column-count: 3;
     }
 }

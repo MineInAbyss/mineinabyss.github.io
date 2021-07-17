@@ -1,49 +1,50 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var lazyloadImages;
+document.addEventListener("DOMContentLoaded",function() {
+    var toLoad
 
-    if ("IntersectionObserver" in window) {
-        lazyloadImages = document.querySelectorAll(".lazy");
-        var imageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
+    if("IntersectionObserver" in window) {
+        toLoad = document.querySelectorAll(".lazy")
+        var imageObserver = new IntersectionObserver(function (entries,observer){
+            entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
-                    var image = entry.target;
-                    image.src = image.dataset.src;
-                    image.classList.remove("lazy");
-                    imageObserver.unobserve(image);
+                    var image = entry.target
+                    image.src = image.id
+                    image.classList.remove("lazy")
+                    imageObserver.unobserve(image)
                 }
-            });
-        });
+            })
+        })
 
-        lazyloadImages.forEach(function(image) {
-            imageObserver.observe(image);
-        });
+        toLoad.forEach(function (image) {
+            imageObserver.observe(image)
+        })
     } else {
-        var lazyloadThrottleTimeout;
-        lazyloadImages = document.querySelectorAll(".lazy");
+        var timeout
+        toLoad = document.querySelectorAll(".lazy")
 
-        function lazyload () {
-            if(lazyloadThrottleTimeout) {
-                clearTimeout(lazyloadThrottleTimeout);
+        function lazyLoad() {
+            if(timeout) {
+                clearTimeout(timeout)
             }
 
-            lazyloadThrottleTimeout = setTimeout(function() {
-                var scrollTop = window.pageYOffset;
-                lazyloadImages.forEach(function(img) {
+            timeout = setTimeout(function () {
+                var scrollTop = window.pageYOffset
+                toLoad.forEach(function (img){
                     if(img.offsetTop < (window.innerHeight + scrollTop)) {
-                        img.src = img.dataset.src;
-                        img.classList.remove('lazy');
+                        img.src = img.id
+                        img.classList.remove('lazy')
                     }
-                });
-                if(lazyloadImages.length == 0) {
-                    document.removeEventListener("scroll", lazyload);
-                    window.removeEventListener("resize", lazyload);
-                    window.removeEventListener("orientationChange", lazyload);
-                }
-            }, 20);
-        }
+                })
 
-        document.addEventListener("scroll", lazyload);
-        window.addEventListener("resize", lazyload);
-        window.addEventListener("orientationChange", lazyload);
+                if(toLoad.length == 0) {
+                    document.removeEventListener("scroll", lazyLoad)
+                    window.removeEventListener("resize", lazyLoad)
+                    window.removeEventListener("orientationchange", lazyLoad)
+
+                }
+            }, 20)
+        }
+        document.addEventListener("scroll",lazyLoad)
+        window.addEventListener("resize",lazyLoad)
+        window.addEventListener("orientationchange", lazyLoad)
     }
 })
